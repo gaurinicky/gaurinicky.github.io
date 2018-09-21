@@ -1,3 +1,4 @@
+/*this is for the card hover effect*/
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -13,19 +14,20 @@ img {
     border-radius: 5px 5px 0 0;
 }
 
+/*this is for the transparent box with the content*/
 .container {
-    padding: 2px 16px;
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
 }
 
-div.box {
-  position: absolute;
-  align: center;
-  margin: auto;
-  padding: 10px;
-  width: auto;
-
-  background-color: #000000;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+.container .content {
+  position: absolute; /* Position the background text */
+  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  left: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
 }
