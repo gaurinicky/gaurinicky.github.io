@@ -110,9 +110,11 @@ button:hover, a:hover {
 
 /*this is for the transparent box with the content*/
 .container {
-    position: relative;
+    position: absolute;
     text-align: center;
     color: white;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .centered {
