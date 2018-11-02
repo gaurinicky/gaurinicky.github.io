@@ -41,7 +41,12 @@
     <div class="centered"><b>Hi! <br> I'm Gauri Wahi</b></div> </div>
     <script>
 
-  $( "#content" ).toggle( "slide" );
+    $("#content").hide().slideDown(500, function () {
+      // delay 5 seconds AFTER animation has completed
+      $(this).addClass('in').delay(5000).fadeTo(2000, 500).slideUp(500, function () {
+          $(this).removeClass('in');
+      });
+  });
 
 </script>
   </div>
