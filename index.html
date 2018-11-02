@@ -40,14 +40,9 @@
     <div class="content">
     <div class="centered"><b>Hi! <br> I'm Gauri Wahi</b></div> </div>
     <script>
-
-    $("#content").hide().slideDown(500, function () {
-      // delay 5 seconds AFTER animation has completed
-      $(this).addClass('in').delay(5000).fadeTo(2000, 500).slideUp(500, function () {
-          $(this).removeClass('in');
-      });
-  });
-
+$( document ).click(function() {
+  $( "#content" ).animate({left: "+=150px"}, 2000);
+});
 </script>
   </div>
 </div>
