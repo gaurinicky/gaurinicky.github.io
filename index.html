@@ -9,6 +9,7 @@
   <!--Link stylesheets-->
   <link rel="stylesheet" type="text/css" href="styling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
 </head>
 <body>
@@ -38,6 +39,11 @@
     <img src="images/bg_1.jpg" alt="Snow" style="width:100%;">
     <div class="content">
     <div class="centered"><b>Hi! <br> I'm Gauri Wahi</b></div> </div>
+    <script>
+$( document ).click(function() {
+  $( "#content" ).toggle( "slide" );
+});
+</script>
   </div>
 </div>
 </div><!--close row-->
