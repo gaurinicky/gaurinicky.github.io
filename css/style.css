@@ -7,7 +7,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -1427,3 +1427,16 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+  /*my own styles*/
+  .column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
