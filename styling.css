@@ -140,7 +140,7 @@ button:hover, a:hover {
 }
 
 
-.column {
+.column2 {
     float: left;
     width: 33.33%;
 }
@@ -168,7 +168,7 @@ button:hover, a:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 100%;
-    height: 350px;
+    height: 400px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -185,4 +185,12 @@ button:hover, a:hover {
   border-radius: 5px 5px 0 0;
   width: 100%;
   height: 200px;
+}
+
+/*when you open project*/
+.container1
+{
+  overflow-x: hidden;
+  margin: 5%;
+
 }
