@@ -173,6 +173,7 @@ button:hover, a:hover {
   text-align: center;
   padding: 20px;
   left: 16%;
+
 }
 
 /*card*/
@@ -182,6 +183,7 @@ button:hover, a:hover {
     transition: 0.3s;
     max-width: 300px;
     height: 400px;
+
 
 }
 
