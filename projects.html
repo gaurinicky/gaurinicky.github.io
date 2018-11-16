@@ -14,6 +14,7 @@
   <!--for tab open-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
@@ -49,8 +50,8 @@
   <div class="overlay-content">
     <div class="container1">
       <!-- add dev dash video-->
-      <img src="images/ibmclouddev.png" style="width:100%;"/>
-
+      <img src="images/devdash/1.png" style="width:90%;margin-left: 5%;"/>
+      <br>
       <div class="video-container">
         <div class="row">
           <div class="col-sm-12">
@@ -60,6 +61,15 @@
           </div>
         </div>
       </div>
+</div>
+
+
+
+      <img src="images/devdash/2.png" style="width:90%; margin-left: 5%;"/>
+      <img src="images/devdash/3.png" style="width:90%; margin-left: 5%;"/>
+      <img src="images/devdash/4.png" style="width:90%; margin-left: 5%;"/>
+      <img src="images/devdash/5.png" style="width:90%; margin-left: 5%;"/>
+      <img src="images/devdash/6.png" style="width:90%; margin-left: 5%;"/>
 
     </div>
   </div>
@@ -69,10 +79,72 @@
 <a href="javascript:void(0)" class="closebtn" onclick="closeNavProj2()">&times;</a>
 <div class="overlay-content">
   <div class="container1">
-    <!-- add memotion title-->
-    <img src="images/unnamed.png" style="width:50%; margin-left: 25%; margin-right: auto;"/>
+    <!-- adding slides-->
+    <img src="images/memotion/1.png" width="100%"/>
+    <img src="images/memotion/2.png" width="100%"/>
+    <img src="images/memotion/3.png" width="100%"/>
+    <img src="images/memotion/4.png" width="100%"/>
+    <img src="images/memotion/5.png" width="100%"/>
+    <img src="images/memotion/6.png" width="100%"/>
     <br>
     <br>
+    <!--adding graph-->
+    <div class="row">
+      <br>
+      <br>
+      <div class="column2" style="width: 50%">
+        <img src="images/memotion/graph.png" width="100%"/>
+      </div>
+      <div class="column2" style="width:50%">
+
+
+        <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	exportEnabled: true,
+	title: {
+		text: "Data Processing Collection and Analysis"
+	},
+	axisX: {
+		title: "Factors"
+	},
+	axisY: {
+		includeZero: false,
+		title: "Range",
+		interval: 10,
+	},
+	data: [{
+		type: "rangeBar",
+		showInLegend: true,
+		yValueFormatString: "#0.#",
+		indexLabel: "{y[#index]}",
+		legendText: "Department wise Min and Max Salary",
+		toolTipContent: "<b>{label}</b>: {y[0]} to {y[1]}",
+		dataPoints: [
+			{ x: 10, y:[20, 25], label: "Age" },
+			{ x: 20, y:[1, 6], label: "Male" },
+			{ x: 30, y:[1, 1], label: "Female" },
+			{ x: 40, y:[1, 57], label: "Wear Glasses/Limited Vision" },
+			{ x: 50, y:[1,40], label: "Expression Accuracy" },
+          	{ x: 60, y:[0.25,1], label: "Processing Time" }
+
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      </div>
+    </div><!-- end of row-->
+    <br>
+    <be>
+    <h2 style="margin-left: 50%"> Demo </h2>
     <div class="video-container">
       <div class="row">
         <div class="col-sm-12">
@@ -82,6 +154,9 @@
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <a href="images/report.pdf" class="button1" download="report" style="margin-left: 40%;">Download Research Report </a>
 
   </div>
 </div>
